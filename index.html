@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a holiday-website design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/49a55b4650.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">CLASSES</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT </a></li>
+          </ul>
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>World's best airline</h1>
+        <p>
+          Fying has now been made easy with Alel airways. Fly Alel, fly safe.
+        </p>
+
+        <a href="" class="hero-btn">Services we offer</a>
+      </div>
+    </section>
+
+    <!-- TRAVEL CLASSES -->
+    <section class="class">
+      <h1>Travel classes available</h1>
+      <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>
+
+      <div class="row">
+        <div class="class-col">
+          <h3>First Class</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consecteur adipiscing elit. Pellentesque
+            aliquet turpis nulla, eleifend faucibus est sollicitudin ut.
+            Maecenas ut venenatis ex, et dapibus purus Donec sit.
+          </p>
+        </div>
+
+        <div class="class-col">
+          <h3>Business class</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consecteur adipiscing elit. Pellentesque
+            aliquet turpis nulla, eleifend faucibus est sollicitudin ut.
+            Maecenas ut venenatis ex, et dapibus purus Donec sit.
+          </p>
+        </div>
+
+        <div class="class-col">
+          <h3>Economy class</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consecteur adipiscing elit. Pellentesque
+            aliquet turpis nulla, eleifend faucibus est sollicitudin ut.
+            Maecenas ut venenatis ex, et dapibus purus Donec sit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOTELS AVAILABLE -->
+    <section class="hotels">
+      <h1>Various hotels you can book</h1>
+      <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>
+
+      <div class="row">
+        <div class="hotels-col">
+          <img src="images/PalazzoDrome.jpeg" />
+          <div class="layer">
+            <h3>
+              PALAZZO DAMA<br />ROME'S BEST<br />
+              LUXURY HOTEL
+            </h3>
+          </div>
+        </div>
+
+        <div class="hotels-col">
+          <img src="images/JoaliRmald.jpeg" />
+          <div class="layer">
+            <h3>JOALI RESORT<br />MALDIVES</h3>
+          </div>
+        </div>
+        <div class="hotels-col">
+          <img src="images/TheSirendetMichi.jpeg" />
+          <div class="layer">
+            <h3>THE SIREN HOTEL<br />DETROIT, MICHIGAN</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
